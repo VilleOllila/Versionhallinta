@@ -10,6 +10,13 @@ float sub(float x, float y) {
     return x - y;
 }
 
+float divide(float x, float y) {
+	if ( y == 0) {
+		cout << "Warning: division by zero.\n";
+	}
+	return x / y;
+}
+
 int main() {
 	char op;
 	float num1, num2;
@@ -34,5 +41,9 @@ int main() {
 		cout << "You chose substraction \n";
         cout << num1 << " - " << num2 << " = " << sub(num1, num2) << endl;
 		break;
+
+	case '/':
+		cout << "You chose division \n";
+		cout << num1 << " / " << num2 << " = " << divide(num1, num2) << endl;
 	}
 };
