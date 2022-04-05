@@ -10,6 +10,10 @@ float sub(float x, float y) {
     return x - y;
 }
 
+float multi(float x, float y) {
+	return (x * y);
+}
+
 int main() {
 	char op;
 	float num1, num2;
@@ -30,9 +34,13 @@ int main() {
 		cout << num1 << " + " << num2 << " = " << sum(num1, num2) << endl;
 		break;
 
-    	case '-':
+    case '-':
 		cout << "You chose substraction \n";
         cout << num1 << " - " << num2 << " = " << sub(num1, num2) << endl;
+		break;
+	case '*':
+		cout << "You chose multiplication \n";
+		cout << num1 << " * " << num2 << " = " << multi(num1, num2) << endl;
 		break;
 	}
 };
